@@ -2,14 +2,11 @@
 
 namespace App\Presenters;
 
-use Nette,
-	App\Model,
-	Tracy\Debugger;
+use Nette;
+use App\Model;
+use Tracy\Debugger;
 
 
-/**
- * Error presenter.
- */
 class ErrorPresenter extends BasePresenter
 {
 
