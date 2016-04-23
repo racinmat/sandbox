@@ -11,6 +11,9 @@ class SignPresenter extends BasePresenter
 	/** @var Forms\SignInFormFactory @inject */
 	public $signInfactory;
 
+	/** @var Forms\SignUpFormFactory @inject */
+	public $signUpfactory;
+
 
 	/**
 	 * Sign-in form factory.
@@ -19,6 +22,18 @@ class SignPresenter extends BasePresenter
 	protected function createComponentSignInForm()
 	{
 		return $this->signInfactory->create(function () {
+			$this->redirect('Homepage:');
+		});
+	}
+
+
+	/**
+	 * Sign-up form factory.
+	 * @return Nette\Application\UI\Form
+	 */
+	protected function createComponentSignUpForm()
+	{
+		return $this->signUpfactory->create(function () {
 			$this->redirect('Homepage:');
 		});
 	}
