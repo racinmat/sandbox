@@ -7,9 +7,8 @@ use Nette\Application\Responses;
 use Tracy\ILogger;
 
 
-class ErrorPresenter implements Nette\Application\IPresenter
+class ErrorPresenter extends Nette\Object implements Nette\Application\IPresenter
 {
-	use Nette\SmartObject;
 
 	/** @var ILogger */
 	private $logger;

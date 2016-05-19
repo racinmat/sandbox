@@ -7,9 +7,8 @@ use Nette\Application\Routers\RouteList;
 use Nette\Application\Routers\Route;
 
 
-class RouterFactory
+class RouterFactory extends Nette\Object
 {
-	use Nette\StaticClass;
 
 	/**
 	 * @return Nette\Application\IRouter
