@@ -14,7 +14,8 @@ class FormFactory extends Nette\Object
 	 */
 	public function create()
 	{
-		return new Form;
+		$form = new Form;
+		return $form;
 	}
 
 }
